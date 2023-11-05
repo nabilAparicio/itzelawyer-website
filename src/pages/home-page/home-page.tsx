@@ -1,10 +1,10 @@
-import { Typography } from "@mui/material";
+import HomeHero from "@/components/home-hero/home-hero";
 import React from "react";
 
 export default function HomePage() {
   return (
     <main>
-      <Typography>home-page</Typography>
+      <HomeHero />
     </main>
   );
 }

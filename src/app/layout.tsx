@@ -1,4 +1,5 @@
 import ThemeProvider from "@/theme";
+import { Stack } from "@mui/material";
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import "reset-css";
