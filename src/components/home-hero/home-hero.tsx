@@ -7,6 +7,7 @@ export default function HomeHero() {
   return (
     <Stack
       component={"header"}
+      justifyContent={"center"}
       width={"100%"}
       minHeight={"600px"}
       sx={{
@@ -62,7 +63,6 @@ export default function HomeHero() {
       {/* ===================== HERO CONTENT ====================== */}
       <Stack
         maxWidth={{ xs: "100%", lg: "50%" }}
-        mt={"45px"}
         mx={{ xs: "82px", lg: "139px" }}
         zIndex={3}
       >
@@ -99,7 +99,7 @@ export default function HomeHero() {
         >
           <Link target="_blank" href={"https://grupoguiapanama.com/"}>
             <Box
-              width="163px"
+              width="96px"
               alt="logo grupo guia"
               component="img"
               src={"/logos/grupo_guia.png"}
@@ -110,10 +110,26 @@ export default function HomeHero() {
           </Link>
           <Link target="_blank" href={"https://panamacna.com"}>
             <Box
-              height="126px"
+              height="96px"
               alt="logo colegio nacional de abogados"
               component="img"
               src={"/logos/colegio_abogados.svg"}
+              sx={{
+                objectFit: "contain",
+              }}
+            />
+          </Link>
+          <Link
+            target="_blank"
+            href={
+              "https://credencialesbid.openbadgepassport.org/app/badge/info/20534/pic/embed"
+            }
+          >
+            <Box
+              height="96px"
+              alt="logo colegio nacional de abogados"
+              component="img"
+              src={"/logos/pm4r-agile.png"}
               sx={{
                 objectFit: "contain",
               }}
