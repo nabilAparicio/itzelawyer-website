@@ -71,7 +71,7 @@ export default function HomeHero() {
           fontSize={{ xs: 48, lg: 64 }}
           fontWeight={700}
         >
-          Servicio Honesto y Confiable
+          Servicio Honesto <br /> y Confiable
         </Typography>
         <Typography
           my={"24px"}
