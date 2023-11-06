@@ -10,7 +10,9 @@ const roboto = Roboto({
   display: "swap",
 });
 
-export const metadata: Metadata = {
+export const runtime = "edge";
+
+export const viewport: Metadata = {
   title: "Itzela Hernandez",
   description: "Servicios Legales",
   viewport: { width: "device-width", initialScale: 1, maximumScale: 1 },
