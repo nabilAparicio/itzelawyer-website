@@ -9,7 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@cloudflare/next-on-pages": "^1.7.2",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "@mui/icons-material": "^5.14.16",
@@ -22,6 +21,7 @@
     "styled-components": "^6.1.0"
   },
   "devDependencies": {
+    "@cloudflare/next-on-pages": "^1.7.2",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
