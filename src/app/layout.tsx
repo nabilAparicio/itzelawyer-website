@@ -10,10 +10,9 @@ const roboto = Roboto({
   display: "swap",
 });
 
-export const viewport: Metadata = {
+export const metadata: Metadata = {
   title: "Itzela Hernandez",
   description: "Servicios Legales",
-  viewport: { width: "device-width", initialScale: 1, maximumScale: 1 },
   icons: [
     { rel: "icon", url: "/favicon/favicon.ico" },
     {
@@ -34,6 +33,10 @@ export const viewport: Metadata = {
       url: "/favicon/apple-touch-icon.png",
     },
   ],
+};
+
+export const viewport = {
+  viewport: { width: "device-width", initialScale: 1, maximumScale: 1 },
 };
 
 export default function RootLayout({
