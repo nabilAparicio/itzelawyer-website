@@ -49,8 +49,8 @@ export default function HomeHero() {
         width="auto"
         bottom={0}
         right={{ xs: 0, lg: "8%" }}
-        display={{ xs: "none", lg: "flex" }}
-        maxHeight={{ xs: "90%", lg: "100%" }}
+        // display={{ xs: "none", lg: "flex" }}
+        maxHeight={{ xs: "90%", md: "100%" }}
         alt="busto itzela hernandez"
         component="img"
         src={"/assets/images/portrait_bust.webp"}
@@ -97,7 +97,7 @@ export default function HomeHero() {
           flexDirection={"row"}
           alignItems={"center"}
         >
-          <Link target="_blank" href={"https://grupoguiapanama.com/"}>
+          {/* <Link target="_blank" href={"https://grupoguiapanama.com/"}>
             <Box
               width="96px"
               alt="logo grupo guia"
@@ -134,7 +134,7 @@ export default function HomeHero() {
                 objectFit: "contain",
               }}
             />
-          </Link>
+          </Link> */}
         </Stack>
       </Stack>
     </Stack>
