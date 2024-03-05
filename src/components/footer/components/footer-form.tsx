@@ -1,6 +1,6 @@
 "use server";
 
-import { CheckBox } from "@mui/icons-material";
+import Checkbox from "@mui/material/Checkbox";
 import { Button, Card, Stack, TextField, Typography } from "@mui/material";
 import React from "react";
 import Link from "next/link";
@@ -27,8 +27,8 @@ export default async function FooterForm() {
             multiline
             rows={4}
           />
-          <Stack direction="row" spacing={2}>
-            <CheckBox />
+          <Stack direction="row" spacing={1} alignItems="center">
+            <Checkbox required name="check" />
             <Typography>
               He leído y acepto la{" "}
               <Link style={{ color: "#9C6B0B" }} href={paths.politicalPrivacy}>
