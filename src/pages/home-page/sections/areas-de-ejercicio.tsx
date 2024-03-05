@@ -5,6 +5,7 @@ import React from "react";
 import AccountBalanceIcon from "@mui/icons-material/AccountBalance";
 import SectionIntroductionBanner from "@/components/section-Introduction-banner/section-Introduction-banner";
 import MovingIcon from "@mui/icons-material/Moving";
+import { paths } from "@/utils/routes";
 
 const SecctionObject = {
   title: "Áreas de Ejercicio",
@@ -25,19 +26,19 @@ export default function AreasDeEjercicio() {
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet nibh viverra sollicitudin sed faucibus elit enim amet faucibus. "
           icon={<PublicRoundedIcon style={{ fontSize: "55px" }} />}
           title="Derecho Migratorio"
-          urlLink="/travel"
+          urlLink={paths.areas.migratorio}
         />
         <LabeledIconBox
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet nibh viverra sollicitudin sed faucibus elit enim amet faucibus. "
           icon={<AccountBalanceIcon style={{ fontSize: "55px" }} />}
           title="Derecho Civil"
-          urlLink="/civil"
+          urlLink={paths.areas.civil}
         />
         <LabeledIconBox
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet nibh viverra sollicitudin sed faucibus elit enim amet faucibus. "
           icon={<MovingIcon style={{ fontSize: "55px" }} />}
           title="Derecho Comercial"
-          urlLink="/comertial"
+          urlLink={paths.areas.comercial}
         />
       </Stack>
     </Stack>
