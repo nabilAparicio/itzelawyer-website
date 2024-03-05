@@ -5,16 +5,24 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(datas: FormData) {
   try {
-    const data = await resend.emails.send({
-      from: 'Acme <onboarding@resend.dev>',
-      to: ['orlando.nabil@gmail.com'],
-      subject: 'Hello world',
-      react: OnbordingEmailTemplate({ firstName: 'John' }),
-      text: 'Hello world',
-    });
+  await resend.emails.send({
+  from: 'Acme <onboarding@resend.dev>',
+  to: ['delivered@resend.dev'],
+  subject: 'hello world',
+  text: 'it works!',
+  headers: {
+    'X-Entity-Ref-ID': '123456789',
+  },
+  tags: [
+    {
+      name: 'category',
+      value: 'confirm_email',
+    },
+  ],
+});
 
-    console.log(data);
-    return Response.json(data);
+    console.log('Email sent');
+    return Response.json({ message: 'Email sent' });
   } catch (error) {
     return Response.json({ error });
   }
