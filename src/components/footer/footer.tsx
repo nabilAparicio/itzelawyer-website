@@ -5,7 +5,12 @@ import FooterForm from "./components/footer-form";
 
 export default function Footer() {
   return (
-    <Stack pt={12} px={12} position={"relative"}>
+    <Stack
+      pt={12}
+      px={12}
+      sx={{ zIndex: 9, backgroundColor: "#FFF" }}
+      position={"relative"}
+    >
       <Stack height={"605px"} flexDirection={"row"}>
         <FooterBackground />
         <Stack

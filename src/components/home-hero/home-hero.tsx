@@ -49,7 +49,6 @@ export default function HomeHero() {
         width="auto"
         bottom={0}
         right={{ xs: 0, lg: "8%" }}
-        // display={{ xs: "none", lg: "flex" }}
         maxHeight={{ xs: "90%", md: "100%" }}
         alt="busto itzela hernandez"
         component="img"
