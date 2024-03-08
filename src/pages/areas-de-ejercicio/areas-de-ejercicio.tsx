@@ -6,11 +6,16 @@ import ilustration from "public/assets/images/areas-de-ejercicio/commercial.jpg"
 export default function AreasDeEjercicio() {
   return (
     <Stack>
-      <Box width={"100%"} height={400} sx={{ position: "relative" }}>
+      <Box
+        width={"100%"}
+        height={600}
+        sx={{ position: "relative", mt: "-70px" }}
+      >
         <Image
           alt="ilustracion de derecho Comercial"
           src={ilustration}
           layout="responsive"
+          style={{ position: "fixed", zIndex: -1 }}
           width={400}
           height={300}
         />
@@ -23,7 +28,7 @@ export default function AreasDeEjercicio() {
             zIndex: 2,
             color: "white",
             top: "calc(50% - 24px)",
-            // backgroundColor: "#e5b75a70",
+            backgroundColor: "#e5b75a70",
             width: "100%",
           }}
         >
