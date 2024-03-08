@@ -32,7 +32,7 @@ function ResponsiveAppBar() {
   };
 
   return (
-    <AppBar position="static" sx={{ backgroundColor: "#FFFDF8" }}>
+    <AppBar position="fixed" sx={{ backgroundColor: "#FFFDF8", zIndex: 9 }}>
       <Container maxWidth="xl">
         <Toolbar>
           {/* ==================== MENU MOBILE ==================== */}
